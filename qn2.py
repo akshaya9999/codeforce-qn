@@ -2,7 +2,9 @@ n,f = map(int, input().split())
 x=[]
 y=[]
 for i in range (n):
-  x,y=list(map(int , input().split()))
+  a,b=(map(int , input().split()))
+  x.append(a)
+  y.append(b)
 cf=0
 for j in range(n):
   if int(x[j])<int(y[j]) and 2*int(x[j])>=int(y[j]):
