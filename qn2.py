@@ -7,7 +7,7 @@ for i in range (n):
   y.append(b)
 cf=0
 for j in range(n):
-  if int(x[j])<int(y[j]) and 2*int(x[j])>=int(y[j]):
+  if x[j]<y[j] and 2*x[j]>=y[j]:
     x[j]=2*x[j]
     cf+=1
     if cf==f:
@@ -19,3 +19,6 @@ for k in range(n):
   else:
     final+=x[k]
 print(final)
+
+  
+
